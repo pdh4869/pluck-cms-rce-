@@ -13,7 +13,7 @@ Pluck CMS 4.7.21 dev allows authenticated remote code execution via the module i
 ## Impact
 Allows an authenticated administrator to execute arbitrary PHP code on the server.
 
-
+## PoC
 1) approach manage modules menu and click "install a module"
 <img width="1919" height="515" alt="1__install a module" src="https://github.com/user-attachments/assets/9e8802db-5250-43e2-bb0e-0b7c78ed2923" />
 
