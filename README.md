@@ -1,5 +1,18 @@
-# pluck-cms-rce-
-poc
+# CVE-2026-117426: Pluck CMS Authenticated Remote Code Execution (RCE)
+
+## Affected Product
+- Product: Pluck CMS
+- Version: 4.7.21 dev
+
+## Vulnerability Type
+Remote Code Execution (RCE) / Arbitrary File Upload
+
+## Description
+Pluck CMS 4.7.21 dev allows authenticated remote code execution via the module installation functionality. An administrator can upload a crafted `.tar.gz` archive containing a PHP webshell, which is extracted to `data/modules/` — a directory that lacks PHP execution restrictions in its `.htaccess` file — resulting in remote code execution.
+
+## Impact
+Allows an authenticated administrator to execute arbitrary PHP code on the server.
+
 
 1) approach manage modules menu and click "install a module"
 <img width="1919" height="515" alt="1__install a module" src="https://github.com/user-attachments/assets/9e8802db-5250-43e2-bb0e-0b7c78ed2923" />
